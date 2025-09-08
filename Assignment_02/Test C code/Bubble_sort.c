@@ -1,6 +1,6 @@
 //====================================================//
 // File Name    :   Bubble_sort.c
-// Author       :   Ujjwal Chaudhary, M. Tech. ESE'25, IISc Bangalore.
+// Author       :   Agarwal Prerna SVNIT.
 // Course       :   E3 245 Processor System Design
 // Assignment   :   2
 // Topic        :   32-bit RISC-V Single-clcycle Processor
