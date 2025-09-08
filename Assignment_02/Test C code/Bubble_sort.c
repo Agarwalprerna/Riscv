@@ -1,6 +1,6 @@
 //====================================================//
 // File Name    :   Bubble_sort.c
-// Author       :   Agarwal Prerna SVNIT.
+// Author       :   Agarwal Prerna NIT-Surat.
 // Course       :   E3 245 Processor System Design
 // Assignment   :   2
 // Topic        :   32-bit RISC-V Single-clcycle Processor
