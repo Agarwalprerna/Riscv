@@ -31,6 +31,7 @@ The 5-stage pipeline implementation divides instruction execution into the follo
          3. Instruction Execute (EX) - Performs arithmetic operations and determines next PC
 
          4. Memory Access (MEM) - Handles memory read/write operations
+         
          5. Write Back (WB) - Writes results back to register file
 
 5. Hazard Handling
@@ -54,7 +55,7 @@ The pipelined implementation includes a comprehensive hazard detection and resol
 | Hazard Handling  | Not required |  Needs branch prediction , forwarding  and pipeline flushing for Correctness  |
 ## Testing and Verification
 
-1. Tested using Bubble Sort algorithm in C and complied in RISC V assembly 
+1. Tested using Bubble Sort algorithm in C and then complied in RISC V assembly Language 
 2. Waveform based inspection using Vivado
 
 ## Educational Applications
