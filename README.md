@@ -24,48 +24,34 @@ This project implements a 32-bit RISC-V processor in Verilog HDL, featuring both
 4. Pipelined Architecture
 The 5-stage pipeline implementation divides instruction execution into the following stages :
 
-  1. Instruction Fetch (IF) - Retrieves instructions from memory
+         1. Instruction Fetch (IF) - Retrieves instructions from memory
+  
+         2. Instruction Decode (ID) - Decodes 32-bit instructions and reads registers
 
-  2. Instruction Decode (ID) - Decodes 32-bit instructions and reads registers
+         3. Instruction Execute (EX) - Performs arithmetic operations and determines next PC
 
-  3. Instruction Execute (EX) - Performs arithmetic operations and determines next PC
+         4. Memory Access (MEM) - Handles memory read/write operations
+         5. Write Back (WB) - Writes results back to register file
 
-  4. Memory Access (MEM) - Handles memory read/write operations
-  5. Write Back (WB) - Writes results back to register file
-
-Hazard Handling
+5. Hazard Handling
 The pipelined implementation includes a comprehensive hazard detection and resolution unit that handles :
 
-Data hazards through operand forwarding logic
+         1. Data hazards through operand forwarding logic
 
-Control hazards via pipeline flushing mechanisms
+         2. Control hazards via pipeline flushing mechanisms
 
-Structural hazards through proper resource management
+         3. Structural hazards through proper resource management
 
 
 ## Performance Characteristics Difference
-Single-Cycle Implementation
-Simple control logic with direct instruction execution
 
-Lower hardware complexity suitable for educational purposes
-
-Higher clock period due to critical path through all stages
-
-Pipelined Implementation
-Improved throughput with overlapped instruction execution
-
-Hazard detection and forwarding for data dependency resolution
-
-Branch prediction capabilities for control hazard mitigation
-
-Pipeline stalling and flushing mechanisms for correctness
 | Aspect/Feature         | Single-Cycle Implementation   | Pipelined Implementation                                         |
 |------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------|
 | Control Logic                                  | Simple control logic with direct instruction execution           | Improved throughput with overlapped instruction execution  |
 | Hardware Complexity                            | Lower hardware complexity suitable for basics     | higher due to additional Pipelined registers     |
 | Clock Period                                   | Higher clock period due to critical path through all stages      | Lower clock period means shorter Critical path per stage        |
 | Throughput                                     |  Lower (one instruction per cycle) |              Improved throughput with overlapped instruction execution across multiple Stages        |
-| Hazard Handling  | Not required |  Needs branch prediction , forwarding  and pipeline flushing  |
+| Hazard Handling  | Not required |  Needs branch prediction , forwarding  and pipeline flushing for Correctness  |
 ## Testing and Verification
 
 1. Tested using Bubble Sort algorithm in C and complied in RISC V assembly 
