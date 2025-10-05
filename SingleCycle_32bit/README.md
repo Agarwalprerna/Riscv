@@ -29,7 +29,7 @@
 
 
 ## Author
-[UJJWAL CHAUDHARY](https://www.linkedin.com/in/ujjwal-chaudhary-4436701aa/), M. Tech. ESE 2023-25, IISc Bangalore
+[Prerna Agarwal] , Btech - EE 2026 , NIT surat 
 
 ## Introduction 
 This report details the design and implementation of a 32-bit single-cycle RISC-V processor, realized on the Digilent BASYS3 FPGA platform, equipped with a Xilinx Artix-7 XC7A35T chip. The processor supports a fundamental subset of the RISC-V instruction set architecture (ISA), focusing on arithmetic, logic, load/store, and branch operations.
