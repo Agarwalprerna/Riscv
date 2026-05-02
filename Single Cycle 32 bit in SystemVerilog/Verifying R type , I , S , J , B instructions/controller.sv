@@ -95,12 +95,12 @@ module ALUdecoder ( input logic [1:0]ALUop ,
 			                	end
 					3'b001: ALUControl = 4'b0101;  //SLL	
 				                               
-			                3'b010: ALUControl=4'b1000; //slt , slti
-		                        3'b110: ALUControl=4'b0011; //or , ori
+			        3'b010: ALUControl=4'b1000; //slt , slti
+		            3'b110: ALUControl=4'b0011; //or , ori
 					3'b101: ALUControl = (funct7)?4'b0111:4'b0110; //SRA , SRL
-		                        3'b111: ALUControl = 4'b0010; //or , ori
-		                     default: ALUControl= 4'b0000;
-		                 endcase
+		            3'b111: ALUControl = 4'b0010; //or , ori
+		                default: ALUControl= 4'b0000;
+		           endcase
 			 end
 			default:ALUControl = 4'b0000;	 
 	        endcase
